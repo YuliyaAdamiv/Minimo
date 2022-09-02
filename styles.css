@@ -116,6 +116,17 @@ h4 {
   color: rgb(98, 98, 98);
   line-height: 1.714;
 }
+.share {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.share div {
+  margin-right: 10px;
+}
+.share h5 {
+  margin-right: 10px;
+}
 input {
   border: 0;
   outline: 0;
