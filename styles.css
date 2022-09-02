@@ -59,7 +59,7 @@ ul {
   color: rgb(180, 173, 158);
   text-transform: uppercase;
   line-height: 1.2;
-  padding: 20px 0 130px 0;
+  padding: 35px 0 130px 0;
 }
 .cards {
   display: grid;
@@ -95,7 +95,7 @@ ul {
   line-height: 1.2;
   text-align: center;
 }
-h5 {
+.card-title {
   font-size: 14px;
   font-family: 'Ubuntu';
   color: rgb(180, 173, 158);
@@ -103,7 +103,7 @@ h5 {
   line-height: 1.2;
   padding: 25px 0 20px 0;
 }
-h4 {
+.card-name {
   font-size: 30px;
   font-family: 'PlayfairDisplay';
   color: rgb(98, 98, 98);
