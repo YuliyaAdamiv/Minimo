@@ -14,23 +14,24 @@ ul {
   list-style-type: none;
 }
 .menu {
-  font-size: 14px;
-  font-family: 'PlayfairDisplay';
-  color: rgb(98, 98, 98);
-  text-transform: uppercase;
-  line-height: 1.714;
   display: flex;
   margin: 0 -50px;
 }
 .menu li {
   flex: 1 1 auto;
   margin: 0 58px;
+  font-size: 14px;
+  font-family: 'PlayfairDisplay';
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  line-height: 1.714;
 }
 .photodiary {
-  padding: 185px 11% 10px 8%;
+  padding: 75px 11% 10px 8%;
 }
 .container {
-  padding: 0 11% 100px 8%;
+  max-width: 1065px;
+  padding: 0 11% 100px 11%;
 }
 .photodiary-title {
   font-size: 14px;
@@ -115,6 +116,7 @@ ul {
   font-family: 'PlayfairDisplay';
   color: rgb(98, 98, 98);
   line-height: 1.714;
+  margin-bottom: 20px;
 }
 .share {
   display: flex;
@@ -123,6 +125,7 @@ ul {
 }
 .share div {
   margin-right: 10px;
+  color: #626262;
 }
 .share h5 {
   margin-right: 10px;
@@ -130,8 +133,8 @@ ul {
 input {
   border: 0;
   outline: 0;
-  border-bottom: 2px solid black;
-  padding: 12px 0;
+  border-bottom: 1px solid black;
+  padding: 12px 5px;
   width: 32%;
   margin-top: 69px;
   margin-left: 33%;
@@ -139,6 +142,12 @@ input {
 }
 input {
   background: url(img/send_icon.png) no-repeat scroll 98% 13px;
+}
+input::placeholder {
+  font-size: 14px;
+  font-family: 'PlayfairDisplay';
+  color: rgb(98, 98, 98);
+  line-height: 1.714;
 }
 .sign-up {
   padding: 70px 0 70px 0;
@@ -170,17 +179,20 @@ input {
 .slide img {
   width: 100%;
   height: 100%;
+  background-position: center center;
+  background-size: cover;
   object-fit: cover;
 }
 
 .btn {
   position: absolute;
+  top: 200px;
   width: 40px;
-  height: 509px;
+  height: 40px;
+  border-radius: 50%;
   border: none;
   cursor: pointer;
   font-size: 18px;
-  opacity: 0;
 }
 .btn:active {
   transform: scale(1.1);
@@ -193,6 +205,8 @@ input {
   right: 1%;
 }
 .load {
+  border-width: 1px;
+  color: #626262;
   border-color: rgb(98, 98, 98);
   border-style: solid;
   width: 162px;
@@ -203,17 +217,14 @@ input {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background: white;
 }
 footer {
-  margin-top: 1500px;
+  margin-top: 50px;
   padding: 35px 47px 36px 138px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 14px;
-  font-family: 'PlayfairDisplay';
-  color: rgb(0, 0, 0);
-  line-height: 1.714;
   background: #f0f0f0;
 }
 .footer-left {
@@ -227,8 +238,15 @@ footer {
 }
 footer div {
   margin-right: 20px;
+  font-size: 14px;
+  font-family: 'PlayfairDisplay';
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
 }
 @media (min-width: 320px) and (max-width: 479px) {
+  .photodiary {
+    padding: 60px 11% 10px 8%;
+  }
   .photodiary {
     text-align: center;
   }
@@ -309,16 +327,19 @@ footer div {
   }
 }
 @media (min-width: 480px) and (max-width: 575px) {
+  .photodiary {
+    padding: 60px 11% 10px 8%;
+  }
   input {
     width: 52%;
     margin-left: 25%;
   }
   header {
-    margin: 70px 50px;
+    margin: 70px 55px;
   }
   .menu li {
     flex: 1 1 auto;
-    margin: 0 2px;
+    margin: 0 5px;
   }
   .photodiary {
     text-align: center;
@@ -372,6 +393,9 @@ footer div {
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  .photodiary {
+    padding: 60px 11% 10px 8%;
+  }
   input {
     width: 52%;
     margin-left: 25%;
@@ -429,6 +453,9 @@ footer div {
   }
 }
 @media (min-width: 768px) and (max-width: 978px) {
+  .photodiary {
+    padding: 60px 11% 10px 8%;
+  }
   .menu li {
     flex: 1 1 auto;
     margin: 0 30px;
