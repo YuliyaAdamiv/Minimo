@@ -161,7 +161,7 @@ input::placeholder {
 }
 
 .slider {
-  width: 100%;
+  width: 100vw;
   max-width: 1062px;
   height: 509px;
   position: relative;
@@ -169,11 +169,16 @@ input::placeholder {
 }
 
 .slide {
-  width: 100%;
+  width: 100vw;
   max-width: 1062px;
   height: 509px;
   position: absolute;
   transition: all 0.5s;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url(./img/image.png);
 }
 
 .slide img {
@@ -246,6 +251,7 @@ footer div {
 @media (min-width: 320px) and (max-width: 479px) {
   .photodiary {
     padding: 60px 11% 10px 8%;
+    width: 100%;
   }
   .photodiary {
     text-align: center;
